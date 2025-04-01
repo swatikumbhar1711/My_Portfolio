@@ -1,0 +1,511 @@
+..<!DOCTYPE html>
+<title>Swati Portfolio</title>
+<head>
+	<title>Welcome to Swati Portfolio  </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Passion Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+	SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" /></head>
+
+    <script type="application/x-javascript">
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+	<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+	<link href="css/font-awesome.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+	<script src="js/jquery-2.2.3.min.js"></script>
+	<link href="//fonts.googleapis.com/css?family=Playball" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
+		rel="stylesheet">
+</head>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+    
+        body {
+            background: #ccc;
+        }
+    
+        .skills-section {
+            padding-top: 20px;
+        }
+    
+        .skills-header {
+            text-align: center;
+            color: #fff;
+            padding: 1rem;
+            position: relative;
+        }
+    
+        .skills-header:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background-color: #2ecc71;
+            border-radius: 2px;
+        }
+    
+        .skills-container {
+            display: grid;
+            grid-tempLate-columns: repeat(5, 1fr);
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            grid-gap: 1rem;
+            padding: 1rem 80px;
+            font-size: 1.2rem;
+        }
+    
+        .skills-box {
+            padding: 1rem;
+            color: #000;
+            cursor: pointer;
+        }
+    
+        .skills-box:hover>.skills-title after,
+        .skills-box:hover>.skills-title before {
+            width: 30px;
+        }
+    
+        .skills-box:hover .skills-img {
+            transform: translateX(-20px);
+        }
+    
+        .skills-title {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0.5rem;
+            margin-bottom: 0.5rem;
+            position: relative;
+        }
+    
+        .skills-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 50%;
+            width: 20px;
+            height: 4px;
+            border-radius: 2px 0 0 2px;
+            background-color: #2ecc71;
+            transition: .5s;
+        }
+    
+        .skills-title:before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 100px;
+            height: 4px;
+            border-radius: 0 2px 2px 0;
+            background-color: #2ecc71;
+        }
+    
+        .skills-icons {
+            width: 50px;
+            z-index: 2;
+        }
+    
+        .skills-img {
+            width: 90px;
+            height: 90px;
+            position: relative;
+            border-radius: 45px;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: .5s;
+        }
+    
+        .skills-img:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 90px;
+            background: rgba(100, 100, 100, 0.5);
+            border-radius: 45px 0 0 45px;
+        }
+    
+        .skills-title h3 {
+            color: #333;
+            margin-top: 0.5rem;
+        }
+    
+        @media screen and (max-width:990px) {
+            .skills-container {
+                grid-tempLate-columns: repeat(2, 1fr);
+                padding: 2rem 50px;
+            }
+        }
+    
+        @media screen and (max-width:650px) {
+            .skills-container {
+                grid-tempLate-columns: 2fr;
+                padding: 2rem 50px;
+            }
+        }
+    </style>
+    <style>
+        .ct-socials {
+        box-shadow: 1px 2px rgb(143, 139, 139);
+        position: fixed;
+        top: 40%;
+        left: 0;
+        list-style: none;
+        padding-left: 0;
+        z-index: 10;
+        margin: 0;
+        -webkit-transition: left 0.25s ease-in-out;
+        transition: left 0.25s ease-in-out;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+        </style>
+    
+    <body style="background-image: url('images/wal2.jpg');background-size: cover;background-attachment: fixed;">
+        <div class="banner-w3layouts">
+            <div class="flexslider">
+                <ul class="slides">
+                    <li>
+    
+                        <div class="banner-w3text banner-img1">
+                            <marquee width="20%" direction="left" height="100px"
+                                style="margin-left:600px ;margin-top: 0%;font-size: 35px;">
+                                Hello!!Welcome To My Website!
+                            </marquee>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="banner-w3text banner-img2">
+                            <marquee width="20%" direction="left" height="100px"
+                                style="margin-left:900px ;margin-top: 0%;font-size: 35px;color: rgb(13, 12, 11);">
+                                Dream big...achieve bigger....
+                            </marquee>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="banner-w3text banner-img3">
+                            <marquee width="20%" direction="left" height="100px"
+                                style="margin-left:600px ;margin-top: 0%;font-size: 35px;">
+                                Chasing dreams and making memories.
+                            </marquee>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <script defer src="js/jquery.flexslider.js"></script>
+		<script type="text/javascript">
+			$(window).load(function () {
+				$('.flexslider').flexslider({
+					animation: "slide",
+					start: function (slider) {
+						$('body').removeClass('loading');
+					}
+				});
+			});
+		</script>
+		
+        <ul class="ct-socials">
+			<li style="background-color: #cc7f9e;font-size:40px;padding:5px;">
+			   <a href="tel:8767359672" target="_blank"><i class="fa fa-phone" style="color:#992252"></i></a>
+		   </li>
+			<li style="background-color:white;font-size:40px;padding:5px;">
+			   <a href="https://wa.me/8767359672" target="_blank"><i class="fa fa-whatsapp" style="color:#992252"></i></a>
+			</li>
+			<li style="background-color: #cc7f9e;font-size:40px;padding:5px;">
+			   <a href="https://www.instagram.com/@miss_chitrakaar_08" target="_blank"><i class="fa fa-instagram" style="color:#992252"></i></a>
+			</li>
+		 </ul>
+
+         <div class="banner-agileinfo">
+			<div class="container">
+				<div class="w3header">
+					<nav class="navbar navbar-default">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse"
+								data-target="#bs-example-navbar-collapse-1">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<h1><a href="index.html"><img src="images/nameLogo.jpeg" style="height:40px;width:70px;"></a>
+							</h1>
+						</div>
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="index.html"  class="active">Home</a></li>
+								<li><a href="about.html">About</a></li>
+								<li><a href="project.html">Project</a></li>
+								<li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+									aria-haspopup="true" aria-expanded="false">Hobby <span
+										class="caret"></span></a>
+								
+									<ul class="dropdown-menu">
+										<li><a href="sketch.html">Sketch</a></li>
+										<li><a href="mehandi.html">Mehandi</a></li>
+									</ul>
+								</li>
+								<li><a href="contact.html">Contact</a></li>
+							</ul>
+							<div class="clearfix"> </div>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <div class="" id="about">
+		<div class="container">
+			<div class="about-main">
+				<div class="col-md-6 ">
+					<h3 class="agileits-title" style="margin-top:100px;">about me</h3>
+					<h4>I am Swati Kumbhar</h4>
+					<br>
+					<p class="about-text-w3l col-md-6" style="color:black">My name is Swati Kumbhar,I am From
+						Mahagaon(Gadhinglaj),I am basically from Mahagaon, Gadhinglaj but Currently staying in Kolhapur because I
+						am Studying MCA second year in KIT's IMER Kolhapur. I will be completing my bachelors degree in
+						B.Sc(Computer Science) from Shivaji University Kolhapur in May 2023.</p>
+					<p class="about-text-w3l col-md-6" style="color:black">I Am belongs to nuclear family.My strength
+						are I am self motivated hard working and discipline person.My short term goal is to get a job in
+						reputed company and my long term goal is to achieve a good position in Company.</p>
+					<center><button style="background-color: #992252;color: white;margin-top: 8%;padding: 5px;"><a href="about.html">ReadMore</a></button></center>
+						<div class="clearfix"></div>
+				</div>
+				<div class="w3ls-about-right col-md-6" style="margin-top:50px;">
+					<img class="img-responsive" src="images/S1.jpeg" alt="about-image"
+						style="height:500px;width: 350px;margin-left:90px;box-shadow: 0px 0px 10px 0px #8557ce;">
+				</div>
+				<div class="clearfix"></div>
+			</div><br>
+
+		</div>
+
+        <div class="skills-section" >
+			<div >
+				<center>
+					<h1 style="color:#992252;">My Skills</h1>
+				</center><br>
+			</div>
+			<div class="skills-container">
+
+				<div class="skills-box"style="text-align: center;margin-left:100px">
+					<div >
+						<div>
+							<img src="images/html.jpg"
+								alt="" class="skills-icons" style="height: 150px;width: 150px;">
+						</div>
+						<h3>HTML 5</h3>
+					</div>
+				</div>
+
+
+				<div class="skills-box" style="text-align: center;margin-left:70px">
+					<div >
+						<div >
+							<img src="images/CSS.jpg" alt="" style="height: 150px;width: 150px;"
+								class="skills-icons">
+						</div>
+						<h3>CSS3</h3>
+					</div>
+				</div>
+
+
+				<div class="skills-box"style="text-align: center;margin-left:70px">
+					<div >
+						<div>
+							<img src="images/js.jpg"
+								alt="" class="skills-icons"style="height: 150px;width: 150px;">
+						</div>
+						<h3>JAVASCRIPT</h3>
+					</div>
+				</div>
+
+				<div class="skills-box"style="text-align: center;margin-left:70px">
+					<div >
+						<div>
+							<img src="images/java.jpg"
+								alt="" class="skills-icons"style="height: 150px;width: 150px;">
+						</div>
+						<h3>JAVA</h3>
+					</div>
+				</div>
+
+				<div  class="skills-box" style="text-align: center;margin-left:70px">
+					<div >
+						<div>
+							<img src="images/php.jpg"
+								alt="" class="skills-icons"style="height: 150px;width: 150px;">
+						</div>
+						<h3>PHP</h3>
+					</div>
+				</div>
+
+
+
+			</div>
+
+		</div>
+	</div><br><br>
+
+    <div class="stats">
+		<div class="container">
+			<div class="stats-info">
+				<div class="col-md-3 col-sm-3 stats-grid">
+					<i class="fa fa-smile-o" aria-hidden="true"></i>
+					<div class='numscroller numscroller-big-bottom'>About Us</div>
+					<a href="about.html">
+						<h4 class="stats-info">Read More</h4>
+					</a>
+				</div>
+
+				<div class="col-md-3 col-sm-3 stats-grid">
+					<i class="fa fa-book" aria-hidden="true"></i>
+					<div class='numscroller numscroller-big-bottom'>Project</div>
+					<a href="project.html">
+						<h4 class="stats-info">Read More</h4>
+					</a>
+				</div>
+				
+				<div class="col-md-3 col-sm-3 stats-grid">
+					<img src="images/sketch.png" alt="Icon" width="45" height="45">
+					<div class='numscroller numscroller-big-bottom'>Hobby</div>
+					<a href="sketch.html">
+						<h4 class="stats-info">Read More</h4>
+					</a>
+				</div>
+
+				<div class="col-md-3 col-sm-3 stats-grid">
+					<i class="fa fa-user" aria-hidden="true"></i>
+					<div class='numscroller numscroller-big-bottom'>Contact Us</div>
+					<a href="contact.html">
+						<h4 class="stats-info">Read More</h4>
+					</a>
+				</div>
+
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div><br>
+
+    
+	
+	<div class="about-w3slid">
+		<div class="container">
+			<h2 style="color: paleturquoise;">
+				“Develop success from failures. Discouragement and failure are two of the surest stepping stones to
+				success.”</h2>
+
+		</div>
+	</div>
+	
+	<div class="w3ls-section contact">
+		<div class="container">
+			<div class="w3ls-title">
+				<h3 class="agileits-title">get in touch</h3>
+			</div>
+			<div class="w3ls_map">
+				
+
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7664.952159727259!2d74.33107124092892!3d16.14438113818399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc08f679bab9df1%3A0xd42d602536acc4c3!2sMahagaon%2C%20Maharashtra%20416503!5e0!3m2!1sen!2sin!4v1743344415715!5m2!1sen!2sin" 
+					width="600" height="450" style="border:0;" 
+					allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+
+			<div class="contact_wthreerow agileits-w3layouts">
+				<div class="col-md-5 agileits_w3layouts_contact_gridl">
+					<div class="agileits_mail_grid_right_grid">
+						<h4>About me</h4>
+						<p style="color: #000;">I am always willing to learn new skills. I am friendly, helpful and
+							polite.</p>
+					</div>
+					<div class="agileits_mail_grid_right_grid">
+						<h4>Contact Info</h4>
+						<ul class="contact_info">
+							<li style="color: #000;"><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>416503, A/P. Mahagaon Tal. Gadhinglaj, Dist. Kolhapur</li>
+							<li style="color: #000;"><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a
+								style="color: #000;"href="swatikumbhar172002@gmail.com">swatikumbhar172002@gmail.com</a></li>
+							<li style="color: #000;"><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>+91 8767359672</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-7 w3l_contact_form">
+					<h4>Contact Form</h4>
+					<form action="#" method="post">
+						<input type="text" name="Name" value="Name" onfocus="this.value = '';"
+							onblur="if (this.value == '') {this.value = 'Name';}" required="">
+						<input type="email" name="Email" value="Email" onfocus="this.value = '';"
+							onblur="if (this.value == '') {this.value = 'Email';}" required="">
+						<input type="text" name="Phone" value="Phone" onfocus="this.value = '';"
+							onblur="if (this.value == '') {this.value = 'Phone';}" required="">
+						<textarea name="Message" onfocus="this.value = '';"
+							onblur="if (this.value == '') {this.value = 'Message...';}"
+							required="">Message...</textarea>
+						<input type="submit" value="Submit">
+					</form>
+				</div>
+
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<div class="w3_agile-copyright text-center">
+		<p>© 2025 Welcome to my Website| Design by Swati <a href="https://web.whatsapp.com/">
+			<i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+		<a href="https://www.instagram.com/accounts/onetap/?next=%2F"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+		</p>
+	</div>
+	<div class="tooltip-content">
+		<div class="modal fade features-modal" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog modal-md">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title">passion</h4>
+					</div>
+					<div class="modal-body">
+						<img src="images/1.jpg" class="img-responsive" alt="image">
+						<p>.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/SmoothScroll.min.js"></script>
+	<script type="text/javascript" src="js/numscroller-1.0.js"></script>
+	
+	<script src="js/bootstrap.js"></script>
+	
+	<script type='text/javascript' data-cfasync='false'>window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({c: '314aaef4-311b-4726-b66c-d4d2f99a56c6', f: true }); done = true; } }; })();</script>
+
+</body>
+    
+</html>
